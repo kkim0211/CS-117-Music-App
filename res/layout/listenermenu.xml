@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+     
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Current Sessions"
+              android:textSize="30dip"
+              android:gravity="center"
+              android:layout_marginTop="20dip"/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="15dp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+        
+    <TextView android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Session Names"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Ratings"
+        android:textColor="#372c24" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.1" 
+        android:orientation="horizontal">
+ 		 <!-- List of Users began here  -->
+
+         <ListView
+             android:id="@+id/listView1"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content" >
+
+        </ListView>       
+        <ListView
+             android:id="@+id/listView2"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content" >
+        </ListView>
+        <!-- List of Users end here  -->     
+    </LinearLayout>
+
+
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20dip"
+        android:textColor="#21dbd4"
+        android:textStyle="bold"
+        android:id="@+id/Logout"
+        android:layout_marginTop="20dip"/>
+ 
+</LinearLayout>

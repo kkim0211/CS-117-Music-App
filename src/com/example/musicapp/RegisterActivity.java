@@ -14,27 +14,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView; 
 
-public class MainActivity extends Activity implements OnClickListener {
+public class RegisterActivity extends Activity implements OnClickListener {
 
-	Button login, newuser; 
+	Button register, exist; 
 	EditText username;
 	EditText password;
+	EditText email;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        login=(Button)findViewById(R.id.Login);
-        login.setOnClickListener(this);
+        register=(Button)findViewById(R.id.btnRegister);
+        register.setOnClickListener(this);
         
-        username=(EditText)findViewById(R.id.get_username);
-        password=(EditText)findViewById(R.id.get_password);
+        username=(EditText)findViewById(R.id.reg_username);
+        password=(EditText)findViewById(R.id.reg_password);
+        email=(EditText)findViewById(R.id.reg_email);
 
         
         
-        newuser=(Button)findViewById(R.id.NewUser);
-        newuser.setOnClickListener(this);
+        exist=(Button)findViewById(R.id.link_to_login);
+        exist.setOnClickListener(this);
 	}
 	
 	@Override
@@ -43,20 +45,22 @@ public class MainActivity extends Activity implements OnClickListener {
 		int clickedBtnId=arg0.getId();
 		
 		//TODO create actual login logic
-		if (clickedBtnId == R.id.Login)
+		if (clickedBtnId == R.id.btnRegister)
 		{
 			//user and pass is user input username and password. Create login logic with that
 			String user = username.getText().toString();
 			String pass = password.getText().toString();
+			String em = email.getText().toString();
+			//Perform logic to check if user exists or not. How to register user is up to you.
 			
-			Intent ToHome = new Intent (this, HomeActivity.class);
-			startActivity(ToHome);
+			Intent ToCheck = new Intent (this, HomeActivity.class);
+			startActivity(ToCheck);
 		}
 		
-		else if (clickedBtnId == R.id.NewUser)
+		else if (clickedBtnId == R.id.link_to_login)
 		{
-			Intent ToRegister = new Intent (this, RegisterActivity.class);
-			startActivity(ToRegister);
+			Intent ToHome = new Intent (this, HomeActivity.class);
+			startActivity(ToHome);
 		}
 		
 	}

@@ -31,6 +31,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity    
+            android:name="com.example.musicapp.HomeActivity"
+            android:label="Home"></activity>
+        <activity    
+            android:name="com.example.musicapp.RegisterActivity"
+            android:label="Register"></activity>
+        <activity    
+            android:name="com.example.musicapp.CreateSessionActivity"
+            android:label="Create Session"></activity>
+        <activity    
+            android:name="com.example.musicapp.CurrentSessionActivity"
+            android:label="CurrentSession"></activity>
+        <activity    
+            android:name="com.example.musicapp.DJSessionActivity"
+            android:label="DJ Session"></activity>
+        <activity    
+            android:name="com.example.musicapp.ListenerMenuActivity"
+            android:label="Listener Menu"></activity>
+        <activity    
+            android:name="com.example.musicapp.UserFavoriteActivity"
+            android:label="User Favorite"></activity>
+        <activity    
+            android:name="com.example.musicapp.ViewUsersActivity"
+            android:label="View Users"></activity>
+        <activity    
+            android:name="com.example.musicapp.MyFavActivity"
+            android:label="My Favorite"></activity>
     </application>
 
 </manifest>

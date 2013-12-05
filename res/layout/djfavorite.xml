@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+     
+    <TextView 
+        	android:id="@+id/SessionName"
+        	android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="30dip"
+              android:gravity="center"
+              android:layout_marginTop="20dip"/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="15dp"/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="User's Connected "/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.1" >
+ 		 <!-- List of MenuList began here  -->
+
+         <ListView
+             android:id="@+id/listView1"
+             android:layout_width="match_parent"
+             android:layout_height="192dp" >
+
+        </ListView>       
+        <!-- List of Users end here  -->     
+    </LinearLayout>
+
+
+    <Button android:id="@+id/EndSession"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dip"
+                android:text="End Session!"/>
+    
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20dip"
+        android:textColor="#21dbd4"
+        android:textStyle="bold"
+        android:id="@+id/Logout"
+        android:layout_marginTop="20dip"/>
+ 
+</LinearLayout>

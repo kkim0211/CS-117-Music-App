@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+     
+    <TextView 
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="40dip"
+              android:gravity="center"
+              android:layout_marginTop="20dip"/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="15dp"/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="DJ Rating: "/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="60dp"/>
+    
+     <TextView 
+         	android:id="@+id/textView2"
+         	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#372c24"
+                android:text="..Song Playing.."/>
+     
+         
+    
+    
+    
+    <Button android:id="@+id/ViewUsers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dip"
+                android:text="Users Connected"/>
+    <Button android:id="@+id/EndSession"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dip"
+                android:text="End Session!"/>
+    
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20dip"
+        android:textColor="#21dbd4"
+        android:textStyle="bold"
+        android:id="@+id/Logout"
+        android:layout_marginTop="20dip"/>
+ 
+</LinearLayout>

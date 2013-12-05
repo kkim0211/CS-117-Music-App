@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+     
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="DJ Session"
+              android:textSize="40dip"
+              android:gravity="center"
+              android:layout_marginTop="20dip"/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="15dp"/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="DJ Rating: "/>
+    
+    <TextView android:layout_width="fill_parent"
+                android:layout_height="25dp"/>
+    
+     <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Session Name"/>
+     
+          <EditText android:id="@+id/SessionName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"/>
+    
+    <Button android:id="@+id/CreateSession"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Create Session!"/>
+    
+    
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20dip"
+        android:textColor="#21dbd4"
+        android:textStyle="bold"
+        android:id="@+id/Logout"
+        android:layout_marginTop="80dip"/>
+ 
+</LinearLayout>
